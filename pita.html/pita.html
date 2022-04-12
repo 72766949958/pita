@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pita</title>
+</head>
+<body>
+    <img src="file:///C:/Users/KissGL/Desktop/haromszog.jpg" width="300" height="250">
+    <fieldset style="width: fit-content;">
+    <input type="number" name="a oldal" id="aold" placeholder="a oldal megadása..." required>
+    <br>
+    <input type="number" name="b oldal" id="bold" placeholder="b oldal megadása..." required>
+    <br>
+    <button onclick="SZAMOL(aold.value,bold.value)" >Számítás</button>
+    </fieldset>
+
+    <p id="eredmeny"></p>
+
+    <script>
+       function SZAMOL(a,b){
+        var c = 
+        c = Math.sqrt(a*a+b*b)
+        document.getElementById("eredmeny").innerHTML = c
+       }
+    </script>
+    
+</body>
+</html>
